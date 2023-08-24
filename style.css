@@ -49,6 +49,20 @@
     font-weight: 300;
 }
 
+.btn-lets-talk {
+    background-color: #012169;
+    border-color: #012169;
+    font-size: 16px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.btn-lets-talk a {
+    color: #FFF !important;
+}
+
 .button-wrapper {
     grid-column-gap: 25px;
     grid-row-gap: 25px;
@@ -92,6 +106,72 @@
     color: #012169 !important;
 }
 
+.skew-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skew-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.skew-card p {
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    height: 60px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2em;
+    position: relative;
+    z-index: 100;
+}
+
+.skew-card::after {
+    content: '';
+    background-color: #CD381C;
+    height: 60px;
+    transform: skew(336deg, 360deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.aqua {
+    position: absolute;
+    background-color: #41B0F6;
+    width: 15px;
+    left: 50px;
+    height: 60px;
+    transform: skew(336deg, 360deg);
+    z-index: 2;
+}
+
+.blue {
+    position: absolute;
+    background-color: #062769;
+    left: 65px;
+    right: 0;
+    height: 60px;
+    transform: skew(336deg, 360deg);
+    z-index: 2;
+}
+
+.skew-card:nth-child(2)::after {
+    background-color: #CD381C;
+}
+
+.skew-card:nth-child(3)::after {
+    background-color: #41B0F6;
+}
+
+.skew-card:nth-child(4)::after {
+    background-color: #062769;
+}
 
 /* Services */
 .services,
@@ -131,7 +211,7 @@ h4 {
 }
 
 .icon-box {
-    background: #fff;
+    /* background: #fff; */
     background-size: cover;
 }
 
@@ -376,6 +456,9 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 40px;
+    grid-column-gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .subtitle {
@@ -430,6 +513,24 @@ footer {
     transform: scale(1.025, 1.025);
 }
 
+.image-wrapper img {
+    object-fit: cover;
+    max-width: 700px;
+}
+
+.story-content div:nth-child(3) {
+    margin-left: -170px;
+}
+
+@media (max-width:600px) {
+    .image-wrapper img {
+        width: 100%;
+    }
+
+    .story-content div:nth-child(3) {
+        margin-left: 0px;
+    }
+}
 
 /* Clients */
 
@@ -717,6 +818,10 @@ textarea {
     .open-nav {
         opacity: 1;
         transform: translateX(0);
+    }
+
+    .btn-lets-talk {
+        display: none;
     }
 }
 

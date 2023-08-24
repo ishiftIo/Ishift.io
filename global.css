@@ -21,7 +21,7 @@ li {
 header {
     background: var(--bs-primary-color);
     width: 100%;
-    height: 90px;
+    height: 100px;
 }
 
 ul {
