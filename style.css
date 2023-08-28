@@ -823,6 +823,11 @@ textarea {
     .btn-lets-talk {
         display: none;
     }
+
+    .skew-cards {
+        flex-direction: column;
+        gap: 25px;
+    }
 }
 
 @media (max-width:1024px) and (min-width: 770px) {
