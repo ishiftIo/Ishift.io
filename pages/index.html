@@ -21,7 +21,7 @@
     <header class="d-flex align-items-center justify-space-between fixed-top">
         <nav class="navbar fixed-top bg-white navbar-expand-lg navbar-light w-100">
             <a class="navbar-brand" href="#"><img class="img-fluid" style="max-height: 40px;"
-                    src="https://ishift.io/assets/img/logo.png" alt="" srcset=""></a>
+                    src="../assets/ishift-small.jpeg" alt="" srcset=""></a>
             <div class="icon" onclick="handleOnClick()"><i class="bi bi-list"></i></div>
 
             <div class="collapse navbar-collapse justify-content-end navbarMenu" id="navbarNavDropdown">
@@ -83,14 +83,15 @@
                         accelerate your transformation
                         for tomorrow.</p>
                     <div class="button-wrapper">
-                        <a href="./services.html" class="btn-get-started">Our Services</a>
+                        <a href="#" onclick="document.getElementById('service').scrollIntoView({behavior:'smooth'})"
+                            class="btn-get-started">Our Services</a>
                         <a href="./solutions.html" class="btn-services">Get Started</a>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="services container">
-            <div class="services-intro ">
+        <section class="services container" id="service">
+            <div class="services-intro">
                 <h3 class="page-title">Services</h3>
                 <p>We rapidly modernize your legacy processes and systems using low-code platforms, RPA and Machine
                     Learning. We augment our solutions with intelligent automation and data-driven analytics leveraging
@@ -258,8 +259,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 footer-info">
                         <div class="logo">
-                            <a href="index.html"><img src="https://ishift.io/assets/img/logo-white.png" alt=""
-                                    class="img-fluid"></a>
+                            <a href="index.html"><img src="../assets/ishift-large.jpeg" alt="" class="img-fluid"></a>
                         </div>
                         <p>
                             <br>iShift offers deep low-code technical leadership and Agile delivery expertise. Our

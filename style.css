@@ -22,12 +22,20 @@
     margin: auto;
 }
 
+.navbar img {
+    mix-blend-mode: multiply;
+}
+
 /* Home */
 .home-banner {
     width: 100%;
     position: relative;
     background-color: darkblue;
     padding: 200px 0 120px 0;
+    background-image: url('./assets/pexels-rostislav-uzunov-5011647.jpg');
+    background-repeat: no-repeat;
+    background-position-x: 25%;
+    background-position-y: center;
 }
 
 
@@ -333,6 +341,7 @@ footer {
 .logo img {
     padding: 0;
     max-height: 60px;
+    mix-blend-mode: multiply;
 }
 
 .footer-info p {
@@ -492,7 +501,7 @@ footer {
 
 .stripe {
     position: absolute;
-    background-color: red;
+    background-color: var(--bright-blue);
     width: 400px;
     transform: skew(139deg, 360deg);
     height: inherit;
@@ -626,12 +635,10 @@ textarea {
 
 .contact-map-wrapper {
     min-height: 764px;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     display: flex;
     position: relative;
-    transform: translate(0);
 }
 
 .contact-info-content-top {
@@ -663,8 +670,6 @@ textarea {
     max-width: 468px;
     background-color: #012169;
     padding: 83px 89px 101px;
-    position: absolute;
-    left: 0;
 }
 
 .contact-info-wrapper.last {
@@ -775,6 +780,12 @@ textarea {
         width: auto !important;
     }
 
+    .home-banner {
+        background-size: cover;
+        background-image: linear-gradient(rgba(1, 33, 105, .8), rgba(1, 33, 105, .8)), url(./assets/pexels-rostislav-uzunov-5011647.jpg);
+        background-position: center;
+    }
+
     .button-wrapper a {
         flex: 1;
     }
@@ -832,6 +843,10 @@ textarea {
     .skew-cards {
         flex-direction: column;
         gap: 25px;
+    }
+
+    .contact-map-wrapper {
+        flex-direction: column;
     }
 }
 
