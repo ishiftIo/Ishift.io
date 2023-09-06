@@ -6,6 +6,7 @@ body {
     color: var(--bs-charcoal);
     box-sizing: border-box;
     font-family: var(--font-family-inter);
+    overflow-x: hidden;
 }
 
 a {
