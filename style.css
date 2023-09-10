@@ -30,30 +30,18 @@
 .home-banner {
     width: 100%;
     position: relative;
-    background-color: darkblue;
     padding: 200px 0 120px 0;
-    /* background-image: url('./assets/pexels-djordje-petrovic-2102416.jpg'); */
-    background-repeat: no-repeat;
-    background-position-x: 25%;
-    background-position-y: center;
+    background: url('./assets/hero-bg.png') center bottom no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
 }
 
 .hero-info h2 {
     color: var(--bs-primary-color);
     margin-bottom: 40px;
-    font-size: 5rem;
-    line-height: 1.01em;
+    font-size: 2.75rem;
+    line-height: 1.2;
     font-weight: var(--font-weight-md);
-}
-
-.hero-info span {
-    color: var(--bright-blue);
-}
-
-.hero-info p {
-    font-size: 24px;
-    line-height: 1.583em;
-    font-weight: 300;
 }
 
 .btn-lets-talk {
@@ -71,8 +59,8 @@
 }
 
 .button-wrapper {
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     text-align: left;
     justify-content: flex-start;
     align-items: center;
@@ -81,10 +69,14 @@
     flex-wrap: wrap;
 }
 
-.btn-get-started:hover,
-.btn-services:hover {
-    transform: scale(1.025, 1.025);
+.btn-get-started:hover {
+    background: transparent;
+    border-color: var(--bs-primary-color);
+}
 
+.btn-services:hover {
+    background: var(--bs-dodger-blue);
+    border-color: var(--bs-dodger-blue);
 }
 
 .img-fluid {
@@ -94,99 +86,23 @@
 
 .btn-get-started,
 .btn-services {
-    color: var(--bs-primary-color) !important;
     text-align: center;
-    transform-style: preserve-3d;
-    background-color: #41b6e6;
-    border: 1.5px solid #41b6e6;
-    border-radius: 5px;
-    padding: 22px 56px 24px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.1em;
-    transition: transform .3s;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    background: var(--bs-dodger-blue);
+    border: 2px solid var(--bs-dodger-blue);
+    color: #fff !important;
 }
 
 .btn-services {
-    border: 2px solid #fff !important;
-    background: var(--bs-primary-color) !important;
-    color: #012169 !important;
-}
-
-.skew-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    margin-bottom: 60px;
-}
-
-.skew-card {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.skew-card p {
-    color: #fff !important;
-    margin: 0 !important;
-    height: 80px;
-    padding: 0px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.2em !important;
-    position: relative;
-    z-index: 100;
-}
-
-.skew-card::after {
-    content: '';
-    background-color: #1da3da;
-    height: 80px;
-    transform: skew(336deg, 360deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.aqua {
-    position: absolute;
-    background-color: #41B0F6;
-    width: 15px;
-    left: 50px;
-    height: 80px;
-    transform: skew(336deg, 360deg);
-    z-index: 2;
-}
-
-.blue {
-    position: absolute;
-    background-color: #062769;
-    left: 65px;
-    right: 0;
-    height: 80px;
-    transform: skew(336deg, 360deg);
-    z-index: 2;
-}
-
-.skew-card:nth-child(2)::after {
-    background-color: #9ec73d;
-}
-
-.skew-card:nth-child(3)::after {
-    background-color: #41B0F6;
-}
-
-.skew-card:nth-child(4)::after {
-    background-color: #015799;
+    border: 2px solid #fff;
+    background-color: transparent;
 }
 
 /* Services */
-.services,
 .careers,
 .contact-container {
     padding-top: 130px;
@@ -236,13 +152,13 @@ h4 {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: 2px solid #007bff;
+    border: 2px solid var(--bs-dodger-blue);
     transition: all 0.3s ease-in-out;
     margin-bottom: 46px;
 }
 
 .icon-box .icon i {
-    color: #007bff;
+    color: var(--bs-dodger-blue);
     font-size: 24px;
     line-height: 0;
 }
@@ -327,6 +243,10 @@ footer {
     background: var(--light-grey);
     color: #eee;
     font-size: var(--font-size-xsm);
+}
+
+.address {
+    line-height: 28px !important;
 }
 
 .footer-top {
@@ -563,6 +483,10 @@ footer {
     .story-content div:nth-child(3) {
         margin-left: 0px;
     }
+
+    .button-wrapper {
+        flex-direction: column;
+    }
 }
 
 /* Clients */
@@ -698,13 +622,9 @@ textarea {
 }
 
 @media (max-width:770px) {
-    .hero-info h2 {
-        font-size: 2.1rem;
-        line-height: 1.1em;
-    }
 
-    .hero-info p {
-        font-size: 1em;
+    .hero-info h2 {
+        font-size: var(--font-size-6);
     }
 
     .services-intro h3,
@@ -799,10 +719,17 @@ textarea {
         width: auto !important;
     }
 
-    .home-banner {
-        background-size: cover;
-        background-image: linear-gradient(rgba(1, 33, 105, .8), rgba(1, 33, 105, .8)), url(./assets/pexels-rostislav-uzunov-5011647.jpg);
-        background-position: center;
+    .home-banner>div {
+        gap: 25px;
+    }
+
+    .hero-img {
+        width: 80% !important;
+    }
+
+    .hero-info h2,
+    p {
+        text-align: center;
     }
 
     .button-wrapper a,
@@ -860,21 +787,12 @@ textarea {
         display: none;
     }
 
-    .skew-cards {
-        flex-direction: column;
-        gap: 25px;
-    }
-
     .contact-map-wrapper {
         flex-direction: column;
     }
 }
 
 @media (max-width:1024px) and (min-width: 770px) {
-
-    .hero-info h2 {
-        font-size: 63px;
-    }
 
     .services-intro h3,
     .solutions-intro h3,
