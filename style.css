@@ -144,7 +144,7 @@
 
 .skew-card::after {
     content: '';
-    background-color: #CD381C;
+    background-color: #1da3da;
     height: 80px;
     transform: skew(336deg, 360deg);
     position: absolute;
@@ -174,7 +174,7 @@
 }
 
 .skew-card:nth-child(2)::after {
-    background-color: #CD381C;
+    background-color: #9ec73d;
 }
 
 .skew-card:nth-child(3)::after {
@@ -182,7 +182,7 @@
 }
 
 .skew-card:nth-child(4)::after {
-    background-color: #062769;
+    background-color: #015799;
 }
 
 /* Services */
@@ -361,8 +361,14 @@ footer {
     line-height: 1.1em;
 }
 
-.footer-links ul {
-    border-top: 6px solid var(--bs-dark-cerulean);
+.footer-links::before,
+.second-menu::before,
+.location::before {
+    content: '';
+    display: block;
+    height: 6px;
+    width: 70%;
+    background-color: var(--bs-dark-cerulean);
 }
 
 .footer-links ul li {
@@ -370,8 +376,8 @@ footer {
     margin-bottom: 24px;
 }
 
-.second-menu ul {
-    border-color: var(--bright-blue);
+.second-menu::before {
+    background-color: var(--bright-blue) !important;
 }
 
 .footer-links ul a {
@@ -390,14 +396,13 @@ footer {
 }
 
 .footer-contact {
-    margin-bottom: 30px;
     color: var(--bs-primary-color);
 }
 
-.location {
-    padding: 8px 0 0;
-    margin: 0 15px;
-    border-top: 6px solid var(--bs-primary-color);
+.location::before {
+    background-color: var(--bs-primary-color);
+    margin-bottom: 10px;
+
 }
 
 .social-links a {
