@@ -73,43 +73,56 @@
             </div>
         </nav>
     </header>
-    <section class="about">
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-            <div class="section-header">
-                <h3>About Us</h3>
-                <p>iShift, LLC. is a small business based in the Washington D.C. area comprising a multidisciplinary
-                    team of technology driven professionals with decades of experience in both the public and
-                    private sectors. We endeavor to unleash the power of low-code platforms and machine learning to
-                    bring process discovery, task automation and data-driven analytics for your strategic
-                    decision-making. We offer a variety of technology immersion and advisory/governance services,
-                    each tailored to fit your specific mission needs.</p>
+    <section class="solutions">
+        <div class="container">
+            <div class="solutions-intro ">
+                <h3>Solutions</h3>
+                <p>Maximize your low-code platform investments by using our ready-to-use, pre-build solutions and
+                    accelerators. Drive adoption by easily configuring these solutions to meet your own unique needs.
+                </p>
             </div>
+            <div class="row justify-content-center m-0" style="gap: 50px;">
+                <div class="col-md-6 col-lg-5 reveal-1">
+                    <div class="card">
+                        <h4 class="title"><a href="">iTrust Audit Suite</a></h4>
+                        <p class="description">iTrust Audit uses Appian’s proven mobile-ready, dynamic process and case
+                            management, record security, document management as well as reporting and dashboard
+                            capabilities.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 reveal-2">
+                    <div class="card">
+                        <h4 class="title"><a href="">Field Inspection Suite</a></h4>
+                        <p class="description">Easily digitize your field inspection forms and workflows, while making
+                            them
+                            mobile with offline capabilities. Use AI-driven proactive inspections, saving costs and
+                            building
+                            resiliency.</p>
+                    </div>
+                </div>
 
-            <div class="about-cards row-eq-height justify-content-center">
-                <div class="card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">Low Code Experience</h5>
-                        <p class="card-text">50+ years of combined experience in delivering mission-critical,
-                            low-code applications.</p>
+                <div class="col-md-6 col-lg-5 reveal-1">
+                    <div class="card">
+                        <h4 class="title"><a href="">Dynamic Case Management</a></h4>
+                        <p class="description">A highly configurable, secure and scalable case management system build
+                            on
+                            Appian platform. It brings people &amp; processes together to deliver faster and accurate
+                            decisions making.</p>
                     </div>
                 </div>
-                <div class="card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="bi bi-award-fill"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">Multi-Domain Expertise</h5>
-                        <p class="card-text">From Grants, Acquisition, Claims to Financial and Regulatory
-                            compliance solutions, we know it all. </p>
+
+
+                <div class="col-md-6 col-lg-5 reveal-2">
+                    <div class="card">
+                        <h4 class="title"><a href="">Intelligent Project Management</a></h4>
+                        <p class="description">Track all major project data points including schedule, tasks, risks,
+                            budget
+                            and resources. Effectively track, report and make informed decisions through our built-in
+                            AI.
+                        </p>
                     </div>
                 </div>
-                <div class="card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="bi bi-trophy-fill"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">Award Winning Team</h5>
-                        <p class="card-text">We are team with proven record of winning multiple low-code
-                            hackathons.</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -170,19 +183,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
     <script>
-        ScrollReveal().reveal('.section-header ', {
+        ScrollReveal().reveal('.solutions-intro', {
             duration: 1700,
             origin: 'bottom',
             distance: '50px',
         })
 
-        ScrollReveal().reveal('.card', {
+        ScrollReveal().reveal('.reveal-1', {
             duration: 1700,
-            origin: 'top',
-            scale: '0.85',
-            delay: 500
+            origin: 'left',
+            distance: '100px',
+            delay: 150
+        })
+
+        ScrollReveal().reveal('.reveal-2', {
+            duration: 1700,
+            origin: 'right',
+            distance: '100px',
+            delay: 150
         })
         const currentUrl = window.location.href;
         const newUrl = currentUrl.replace('index.html', '');

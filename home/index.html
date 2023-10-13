@@ -18,60 +18,58 @@
     <link href="../assets/favicon.png" rel="icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-    <script src="../home/index.html"></script>
+    <script src="../index.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
-<body id="content">
+<body>
     <header class="d-flex align-items-center justify-space-between fixed-top">
         <nav class="navbar fixed-top bg-white navbar-expand-lg navbar-light w-100">
-            <a class="navbar-brand" onclick="removeLastPathSegment('/Ishift.io/home/index.html')"><img class="img-fluid" style="max-height: 50px;"
+            <a class="navbar-brand" href="./index.html"><img class="img-fluid" style="max-height: 50px;"
                     src="../assets/ishift-logo-blue.png" alt="" srcset=""></a>
             <div class="icon" onclick="handleOnClick()"><i class="bi bi-list"></i></div>
 
             <div class="collapse navbar-collapse justify-content-end navbarMenu" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                        <li class="nav-item">
-<a class="nav-link" onclick="removeLastPathSegment('/Ishift.io/home/index.html')">Home </a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../home/index.html">Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="removeLastPathSegment('/Ishift.io/solutions/index.html')">Solutions</a>
+                        <a class="nav-link" href="../solution/index.html">Solutions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="removeLastPathSegment('/Ishift.io/about/index.html')">About</a>
+                        <a class="nav-link" href="../about/index.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="removeLastPathSegment('/Ishift.io/careers/index.html')">Careers</a>
+                        <a class="nav-link" href="../career/index.html">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="removeLastPathSegment('/Ishift.io/clients/index.html')">Clients &
-                            Partners</a>
+                        <a class="nav-link" href="../client/index.html">Clients & Partners</a>
                     </li>
                 </ul>
             </div>
             <li class="btn-lets-talk">
-               <a class="nav-link" onclick="removeLastPathSegment('/Ishift.io/contact/index.html')">Contacts</a>
+                <a class="nav-link" href="../contact/index.html">Contacts</a>
             </li>
             <div class="mobile-nav" id="mobile-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" onclick="removeLastPathSegment('/Ishift.io/home/index.html')">Home </a>
+                        <a class="nav-link" href="../home/index.html">Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="removeLastPathSegment('/Ishift.io/solutions/index.html')">Solutions</a>
+                        <a class="nav-link" href="../solution/index.html">Solutions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="removeLastPathSegment('/Ishift.io/about/index.html')">About</a>
+                        <a class="nav-link" href="../about/index.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="removeLastPathSegment('/Ishift.io/careers/index.html')">Careers</a>
+                        <a class="nav-link" href="../career/index.html">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="removeLastPathSegment('/Ishift.io/clients/index.html')">Clients &
-                            Partners</a>
+                        <a class="nav-link" href="../client/index.html">Clients & Partners</a>
                     </li>
                     <li class="nav-item">
-                       <a class="nav-link" onclick="removeLastPathSegment('/Ishift.io/contact/index.html')">Contacts</a>
+                        <a class="nav-link" href="../contact/index.html">Contacts</a>
                     </li>
                 </ul>
             </div>
@@ -93,7 +91,7 @@
                     <div class="button-wrapper">
                         <span onclick="document.getElementById('service').scrollIntoView({behavior:'smooth'})"
                             class="btn-get-started">Our Services</span>
-                        <a onclick="removeLastPathSegment('/Ishift.io/solutions/index.html')" class="btn-services">Get Started</a>
+                        <a href="./solutions.html" class="btn-services">Get Started</a>
                     </div>
                 </div>
                 <img class="hero-img w-50" src="../assets/hero-img.svg" alt="hero svg">
@@ -258,17 +256,17 @@
                     </p>
                 </div>
 
-<div class="col-md-2 footer-links">
+                <div class="col-md-2 footer-links">
                     <ul>
-                        <li><a onclick="removeLastPathSegment('/Ishift.io/home/index.html')">Home</a></li>
-                        <li><a onclick="removeLastPathSegment('/Ishift.io/solutions/index.html')">Solutions</a></li>
-                        <li><a onclick="removeLastPathSegment('/Ishift.io/about/index.html')">About</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./solutions.html">Solutions</a></li>
+                        <li><a href="./about.html">About</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 footer-links second-menu">
                     <ul>
-                        <li><a onclick="removeLastPathSegment('/Ishift.io/careers/index.html')">Careers</a></li>
-                        <li><a onclick="removeLastPathSegment('/Ishift.io/clients/index.html')">Clients & Partners</a></li>
+                        <li><a href="../career/index.html">Careers</a></li>
+                        <li><a href="../client/index.html">Clients & Partners</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 location">
@@ -276,7 +274,7 @@
                         <a class="marker" target="_blank" href="https://goo.gl/maps/1ZAigyxZm4B2m3R77"><i
                                 class="bi bi-geo-alt"></i>
                             <span>1775 Tysons Blvd, McLean, VA 22102</span></a>
-                        43152 Laughing Quail Ct, Ashburn, VA - 20148<br>
+                        <br>
                         <strong>DUNS:</strong> 055279051<br>
                         <strong>UEID:</strong> NF9CQGUTVRD8<br>
                         <strong>CAGE Code:</strong> 8UV24<br>
@@ -316,29 +314,9 @@
             distance: '50px',
             delay: 150
         })
-
-        function removeLastPathSegment(path) {
-            const currentPath = path;
-            const segments = currentPath.split('/');
-            segments.pop(); // Remove the last segment
-            const newPath = segments.join('/');
-            const loadPath = path.split('/').slice(-1).join('/')
-            history.replaceState(null, null, newPath);
-            fetchAndRenderPage('/' + loadPath);
-        }
-
-        function fetchAndRenderPage(path) {
-            console.log(path)
-            path = window.location.href + path
-            fetch(path)
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById('content').innerHTML = html;
-                })
-                .catch(error => {
-                    console.error('Error fetching HTML:', error);
-                });
-        }
+        const currentUrl = window.location.href;
+        const newUrl = currentUrl.replace('index.html', '');
+        history.pushState({}, null, newUrl);
     </script>
 </body>
 

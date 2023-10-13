@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <script src="../index.js"></script>
     <title>iShift - Low Code + Machine Learning</title>
     <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="../assets/favicon.png" rel="icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-    <script src="../index.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
@@ -73,42 +73,44 @@
             </div>
         </nav>
     </header>
-    <section class="about">
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-            <div class="section-header">
-                <h3>About Us</h3>
-                <p>iShift, LLC. is a small business based in the Washington D.C. area comprising a multidisciplinary
-                    team of technology driven professionals with decades of experience in both the public and
-                    private sectors. We endeavor to unleash the power of low-code platforms and machine learning to
-                    bring process discovery, task automation and data-driven analytics for your strategic
-                    decision-making. We offer a variety of technology immersion and advisory/governance services,
-                    each tailored to fit your specific mission needs.</p>
-            </div>
-
-            <div class="about-cards row-eq-height justify-content-center">
-                <div class="card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">Low Code Experience</h5>
-                        <p class="card-text">50+ years of combined experience in delivering mission-critical,
-                            low-code applications.</p>
-                    </div>
+    <section class="services container">
+        <div class="services-intro ">
+            <h3 class="page-title">Clients & Partners</h3>
+            <p>We are proud to partner and support our customers in realizing their digitial transofrmation roadmap.</p>
+        </div>
+        <div class="clients">
+            <div class="logos-wrapper">
+                <div class="logos">
+                    <div class="clients-wrapper"><img src="https://ishift.io/assets/img/clients/client-1.png"
+                            loading="lazy" width="200" alt="" class="image-5"></div>
                 </div>
-                <div class="card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="bi bi-award-fill"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">Multi-Domain Expertise</h5>
-                        <p class="card-text">From Grants, Acquisition, Claims to Financial and Regulatory
-                            compliance solutions, we know it all. </p>
-                    </div>
+                <div class="logos">
+                    <div class="clients-wrapper"><img src="https://ishift.io/assets/img/clients/client-2.png"
+                            loading="lazy" width="200" alt="" class="image-5"></div>
                 </div>
-                <div class="card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="bi bi-trophy-fill"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">Award Winning Team</h5>
-                        <p class="card-text">We are team with proven record of winning multiple low-code
-                            hackathons.</p>
-                    </div>
+                <div class="logos">
+                    <div class="clients-wrapper"><img src="https://ishift.io/assets/img/clients/client-3.png"
+                            loading="lazy" width="200" alt="" class="image-5"></div>
+                </div>
+                <div class="logos">
+                    <div class="clients-wrapper"><img src="https://ishift.io/assets/img/clients/client-4.png"
+                            loading="lazy" width="200" alt="" class="image-5"></div>
+                </div>
+                <div class="logos">
+                    <div class="clients-wrapper"><img src="https://ishift.io/assets/img/clients/client-5.png"
+                            loading="lazy" width="200" alt="" class="image-5"></div>
+                </div>
+                <div class="logos">
+                    <div class="clients-wrapper"><img src="https://ishift.io/assets/img/clients/client-6.png"
+                            loading="lazy" width="200" alt="" class="image-5"></div>
+                </div>
+                <div class="logos">
+                    <div class="clients-wrapper"><img src="https://ishift.io/assets/img/clients/client-7.png"
+                            loading="lazy" width="200" alt="" class="image-5"></div>
+                </div>
+                <div class="logos">
+                    <div class="clients-wrapper"><img src="https://ishift.io/assets/img/clients/client-8.png"
+                            loading="lazy" width="200" alt="" class="image-5"></div>
                 </div>
             </div>
         </div>
@@ -161,6 +163,28 @@
         </div>
 
     </footer>
+
+    <script>
+        ScrollReveal().reveal('.about-container', {
+            duration: 1700,
+        });
+
+        ScrollReveal().reveal('.services-intro ', {
+            duration: 1700,
+            origin: 'bottom',
+            distance: '50px',
+        })
+
+        ScrollReveal().reveal('.logos-wrapper', {
+            duration: 1700,
+            origin: 'top',
+            distance: '100px',
+            delay: 150
+        })
+        const currentUrl = window.location.href;
+        const newUrl = currentUrl.replace('index.html', '');
+        history.pushState({}, null, newUrl);
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -170,24 +194,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
-    <script>
-        ScrollReveal().reveal('.section-header ', {
-            duration: 1700,
-            origin: 'bottom',
-            distance: '50px',
-        })
-
-        ScrollReveal().reveal('.card', {
-            duration: 1700,
-            origin: 'top',
-            scale: '0.85',
-            delay: 500
-        })
-        const currentUrl = window.location.href;
-        const newUrl = currentUrl.replace('index.html', '');
-        history.pushState({}, null, newUrl);
-    </script>
 </body>
 
 </html>
